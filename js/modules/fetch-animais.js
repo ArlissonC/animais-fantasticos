@@ -9,7 +9,6 @@ export default function fetchAnimais(url, target) {
     div.innerHTML = `<h3>${animal.specie}</h3><span data-numero>${animal.total}</span>`;
     return div;
   }
-
   function preencherAnimais(animal) {
     const divAnimal = createAnimal(animal);
     numerosGrid.appendChild(divAnimal);
@@ -36,6 +35,6 @@ export default function fetchAnimais(url, target) {
       console.log(erro);
     }
   }
-  
+
   return criarAnimais();
 }
